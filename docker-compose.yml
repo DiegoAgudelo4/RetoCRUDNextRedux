@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: starter-app
+    image: starter-app
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 4002:3000
