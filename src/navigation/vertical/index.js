@@ -25,6 +25,14 @@ const navigation = () => {
       title: 'Users',
       icon: 'mdi:account-group',
     }
+    ,
+    {
+      path: '/pokemones',
+      action: 'read',
+      subject: 'pokemones-page',
+      title: 'Pokemones',
+      icon: 'mdi:pokeball',
+    }
   ]
 }
 
